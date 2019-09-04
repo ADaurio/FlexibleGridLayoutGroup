@@ -1,4 +1,4 @@
-﻿#if UNITY_EDITOR
+#if UNITY_EDITOR
 using UnityEngine.UI;
 
 namespace UnityEditor.UI
@@ -50,11 +50,11 @@ namespace UnityEditor.UI
                 EditorGUILayout.PropertyField(m_ConstraintCount, true);
                 EditorGUILayout.PropertyField(m_OffAxisScaling, true);
 
-                if (m_OffAxisScaling.enumValueIndex == 0)
+                if (m_OffAxisScaling.enumValueIndex == 1)
                 {
                     EditorGUILayout.PropertyField(m_OffAxisCount, true);
                 }
-                else
+                else if ((m_OffAxisScaling.enumValueIndex == 2))
                 {
                     EditorGUILayout.PropertyField(m_OffAxisAspectRatio, true);
                 }
