@@ -5,7 +5,7 @@ Simple Unity GridLayoutGroup extension to make the default GridLayoutGroup more 
 ## Properties
 
 |Property|Description|
-|---:|---:|
+|---|---|
 |Padding|The padding inside the edges of the layout group.|
 |Start Corner|The corner where the first element is located.|
 |Start Axis|Which primary axis to place elements along. Horizontal will fill an entire row before a new row is started. Vertical will fill an entire column before a new column is started.|
