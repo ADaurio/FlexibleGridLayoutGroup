@@ -49,12 +49,12 @@
                 }
                 else if (offAxisScaling == OffAxisCellSize.Count)
                 {
-                    var offAxisCountSpacing = (OffAxisCount - 1) * spacing.y;
-                    newCellSize.y = (rT.rect.height - padding.vertical - offAxisCountSpacing) / OffAxisCount;
+                    var offAxisCountSpacing = (offAxisCount - 1) * spacing.y;
+                    newCellSize.y = (rT.rect.height - padding.vertical - offAxisCountSpacing) / offAxisCount;
                 }
                 else
                 {
-                    newCellSize.y = newCellSize.x * OffAxisAspectRatio;
+                    newCellSize.y = newCellSize.x * offAxisAspectRatio;
                 }
 
                 cellSize = newCellSize;
@@ -71,12 +71,12 @@
                 }
                 else if (offAxisScaling == OffAxisCellSize.Count)
                 {
-                    var offAxisCountSpacing = (OffAxisCount - 1) * spacing.x;
-                    newCellSize.x = (rT.rect.width - padding.horizontal - offAxisCountSpacing) / OffAxisCount;
+                    var offAxisCountSpacing = (offAxisCount - 1) * spacing.x;
+                    newCellSize.x = (rT.rect.width - padding.horizontal - offAxisCountSpacing) / offAxisCount;
                 }
                 else
                 {
-                    newCellSize.x = newCellSize.y * OffAxisAspectRatio;
+                    newCellSize.x = newCellSize.y * offAxisAspectRatio;
                 }
 
                 cellSize = newCellSize;
