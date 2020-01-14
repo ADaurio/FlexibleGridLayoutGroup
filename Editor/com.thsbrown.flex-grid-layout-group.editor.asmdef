@@ -1,0 +1,16 @@
+{
+    "name": "com.thsbrown.flex-grid-layout-group.editor",
+    "references": [
+        "com.thsbrown.flex-grid-layout-group"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
