@@ -42,12 +42,12 @@
                 var rT = GetComponent<RectTransform>();
                 var newCellSize = new Vector2((rT.rect.width - padding.horizontal - totalGridSpacing.x) / constraintCount, 0);
 
-                if (OffAxisScaling == OffAxisCellSize.Flexible)
+                if (offAxisScaling == OffAxisCellSize.Flexible)
                 {
                     var rowCount = Mathf.Ceil((float) rectChildren.Count / constraintCount);
                     newCellSize.y = (rT.rect.height - padding.vertical - spacing.y*(rowCount-1)) / rowCount;
                 }
-                else if (OffAxisScaling == OffAxisCellSize.Count)
+                else if (offAxisScaling == OffAxisCellSize.Count)
                 {
                     var offAxisCountSpacing = (OffAxisCount - 1) * spacing.y;
                     newCellSize.y = (rT.rect.height - padding.vertical - offAxisCountSpacing) / OffAxisCount;
@@ -64,12 +64,12 @@
                 var rT = GetComponent<RectTransform>();
                 var newCellSize = new Vector2(0, (rT.rect.height - padding.vertical - totalGridSpacing.y) / constraintCount);
 
-                if (OffAxisScaling == OffAxisCellSize.Flexible)
+                if (offAxisScaling == OffAxisCellSize.Flexible)
                 {
                     var colCount = Mathf.Ceil((float) rectChildren.Count / constraintCount);
                     newCellSize.x = (rT.rect.width - padding.horizontal - spacing.x*(colCount-1)) / colCount;
                 }
-                else if (OffAxisScaling == OffAxisCellSize.Count)
+                else if (offAxisScaling == OffAxisCellSize.Count)
                 {
                     var offAxisCountSpacing = (OffAxisCount - 1) * spacing.x;
                     newCellSize.x = (rT.rect.width - padding.horizontal - offAxisCountSpacing) / OffAxisCount;
