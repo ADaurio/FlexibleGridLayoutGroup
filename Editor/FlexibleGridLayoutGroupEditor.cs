@@ -48,6 +48,7 @@ namespace UnityEditor.UI
             if (m_Constraint.enumValueIndex > 0)
             {
                 EditorGUILayout.PropertyField(m_ConstraintCount, true);
+                EditorGUILayout.PropertyField(m_Spacing, true);
                 EditorGUILayout.PropertyField(m_OffAxisScaling, true);
 
                 if (m_OffAxisScaling.enumValueIndex == 1)
