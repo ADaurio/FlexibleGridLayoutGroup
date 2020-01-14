@@ -11,7 +11,7 @@ Simple Unity GridLayoutGroup extension to make the default GridLayoutGroup more 
 |Start Axis|Which primary axis to place elements along. Horizontal will fill an entire row before a new row is started. Vertical will fill an entire column before a new column is started.|
 |Constraint|Constraint the grid to a fixed number of rows or columns to aid the auto layout system.|
 |Cell Size - (Only if Constraint is Flexible)|The size to use for each layout element in the group.|
-|Spacing - The spacing between the layout elements.|
+|Spacing |The spacing between the layout elements.|
 |Off Axis Scaling - (Only if Constraint is NOT Flexible)|The scaling method used for the groups' unconstrained axis.|
 |Off Axis Count - (Only if Off Axis Scaling is Count)|Allows a fixed number of 'unconstrained' axis elements.  Essentially allows you to constain both axis at once, like you'd expect in a table.|
 |Off Axis Aspect Ratio - (Only if Off Axis Scaling is AspectRatio)|The size of each unconstrained axis element as a ratio to the constrained axis element size.|
