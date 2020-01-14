@@ -39,6 +39,7 @@ namespace UnityEditor.UI
             serializedObject.Update();
 
             EditorGUILayout.PropertyField(m_Padding, true);
+            EditorGUILayout.PropertyField(m_Spacing, true);
             EditorGUILayout.PropertyField(m_StartCorner, true);
             EditorGUILayout.PropertyField(m_StartAxis, true);
             EditorGUILayout.PropertyField(m_ChildAlignment, true);
@@ -48,7 +49,6 @@ namespace UnityEditor.UI
             if (m_Constraint.enumValueIndex > 0)
             {
                 EditorGUILayout.PropertyField(m_ConstraintCount, true);
-                EditorGUILayout.PropertyField(m_Spacing, true);
                 EditorGUILayout.PropertyField(m_OffAxisScaling, true);
 
                 if (m_OffAxisScaling.enumValueIndex == 1)
@@ -63,7 +63,6 @@ namespace UnityEditor.UI
             else
             {
                 EditorGUILayout.PropertyField(m_CellSize, true);
-                EditorGUILayout.PropertyField(m_Spacing, true);
             }
 
             EditorGUI.indentLevel--;
