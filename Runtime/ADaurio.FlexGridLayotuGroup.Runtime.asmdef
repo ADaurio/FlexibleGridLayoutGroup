@@ -1,12 +1,8 @@
 {
-    "name": "com.thsbrown.flex-grid-layout-group.editor",
-    "references": [
-        "com.thsbrown.flex-grid-layout-group"
-    ],
+    "name": "ADaurio.FlexGridLayotuGroup.Runtime",
+    "references": [],
     "optionalUnityReferences": [],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
